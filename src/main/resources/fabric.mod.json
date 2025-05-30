@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "betterslapsynthesis",
+  "version": "${version}",
+  "name": "BetterSlapSynthesis",
+  "description": "Welcome to BetterStepSynthesis!Mods bring a new feature to Minecraft's composition system, allowing steps to form into their original blocks.",
+  "authors": [
+    "PickStars"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/user/PickStars",
+    "sources": "https://github.com/PickStars308/BetterSlapSynthesis"
+  },
+  "license": "MIT",
+  "icon": "assets/betterslapsynthesis/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.pickstars.bss.BetterSlapSynthesis"
+    ],
+    "fabric-datagen": [
+      "com.pickstars.bss.BetterSlapSynthesisDataGenerator"
+    ]
+  },
+  "mixins": [
+    "betterslapsynthesis.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "minecraft": ">=1.20",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
