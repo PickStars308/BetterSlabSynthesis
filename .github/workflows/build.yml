@@ -1,5 +1,9 @@
   name: build
-  on: [pull_request, push]
+  on:
+    push:
+      branches:
+        - master  # 你可以修改为你项目的默认分支
+    pull_request:
 
 
   jobs:
